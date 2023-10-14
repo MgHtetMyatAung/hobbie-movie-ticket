@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Clock8 } from "lucide-react";
+import { CalendarDays } from "lucide-react";
 import { Play } from "lucide-react";
 import React from "react";
 
@@ -31,8 +33,12 @@ export default function Banner() {
                   4K
                 </button>
                 <span>Romance, Drama</span>
-                <span>2023</span>
-                <span>128 min</span>
+                <span className=" flex gap-2 items-center">
+                  <CalendarDays size={15} /> 2023
+                </span>
+                <span className=" flex gap-2 items-center">
+                  <Clock8 size={15} /> 128 min
+                </span>
               </div>
               <Button
                 className={
